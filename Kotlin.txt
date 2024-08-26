@@ -98,3 +98,48 @@ fun main() {
 
 
 ----------------------------------------------------------------------------------
+
+un main() {
+    var a=11
+    var b=2
+    var isTrue=true
+    var isFalse=false
+    
+    //Airthmetic operators
+    println("$a + $b = ${a+b}")
+    println("$a - $b = ${a-b}")
+    println("$a * $b = ${a*b}")
+    println("$a / $b = ${a/b}")
+    println("$a % $b = ${a%b}")
+    
+    //Conditional operators
+    println("$a < $b = ${a<b}")
+    println("$a > $b = ${a>b}")
+    println("$a <= $b = ${a<=b}")
+    println("$a >= $b = ${a>=b}")
+    println("$a == $b = ${a==b}")
+    println("$a != $b = ${a!=b}")
+    
+    //Assignment operators
+    a += b
+    println("$a += $b = $a")
+    a -= b
+    println("$a -= $b = $a")
+    a *= b
+    println("$a *= $b = $a")
+    a /= b
+    println("$a /= $b = $a")
+    a %= b
+    println("$a %= $b = $a")
+    
+    //Uranary operators
+    +a
+    println("$a")
+    -a
+    println("$a")
+    ++a
+    println("$a")
+    --a
+    println("$a")
+}
+-----------------------------------------------------------
