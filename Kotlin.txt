@@ -143,3 +143,105 @@ un main() {
     println("$a")
 }
 -----------------------------------------------------------
+fun main() {
+    val temp=25
+    if(temp>20){
+        print("It's a warm day")
+    }
+}
+----------------------------------------------------
+fun main() {
+    val age=12
+    if(age>=18){
+        print("You are an adult")
+    }
+    else
+    	print("You are a minor")
+}
+--------------------------------------------------
+fun main() {
+    var marks=77
+    if(marks>=90)
+    	print("Your grade is A")
+    else if(marks<90 && marks>=85)
+    	print("Your grade is B ")
+	else
+    	print("Your grade is C")
+}
+--------------------------------------------------
+fun main() {
+    var a=10
+    var b=20
+    var c ='*'
+    if(c=='+')
+    	print("$a + $b = ${a+b}")
+    else if(c=='-')
+    	print("$a - $b = ${a-b}")
+    else if(c=='*')
+    	print("$a * $b = ${a*b}")
+    else if(c=='/'){
+        if(b==0){
+            print("Number cannot be divided by zero")
+        }
+        else{
+            print("$a / $b = ${a/b}")
+        }
+    }
+}
+--------------------------------------------------------
+fun main() {
+    var age=20
+    if(age<13){
+        print("Your are a child")
+    }
+    else if(age>=13 && age<=19){
+        print("Your are a teenager")
+    }
+    else{
+        print("Your are an adult")
+    }
+}
+---------------------------------------------------------
+fun main() {
+    var age=20
+    if(age<13){
+        print("Your are a child")
+    }
+    else if(age>=13 && age<=19){
+        print("Your are a teenager")
+    }
+    else if(age>=20 && age<=64){
+        print("Your are an adult")
+    }
+    else{
+        print("Your are a senior")
+    }
+}
+---------------------------------------------------------
+fun main() {
+    val dayofweek=3
+    val dayname=when(dayofweek){
+        1 -> "Monday"
+        2 -> "Tuesday"
+        3 -> "Wednesday"
+        4 -> "Thursday"
+        5 -> "Friday"
+        6 -> "Saturday"
+        7 -> "Sunday"
+        else ->"Invalid day"
+    }
+    print("Name of the day name is $dayname")
+}
+-----------------------------------------------------
+fun main() {
+    val num =20
+    when{
+        num%2==0 -> print("$num is even")
+        num%2!=0 -> print("$num is odd")
+        else -> print("Invalid input")
+    }
+}
+------------------------------------------------------
+
+
+
