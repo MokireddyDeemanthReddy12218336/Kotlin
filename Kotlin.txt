@@ -242,6 +242,76 @@ fun main() {
     }
 }
 ------------------------------------------------------
+fun main() {
+    val num =20
+    when{
+        num%2==0 -> print("$num is even")
+        num%2!=0 -> print("$num is odd")
+        else -> print("Invalid input")
+    }
+}
+------------------------------------------------------
+fun main() {
+    for(i in 1..5){
+        print("$i ")
+    }
+    println()
+    for(i in 1 until 5){
+        print("$i ")
+    }
+    println()
+    for(i in 5 downTo 1){
+        print("$i ")
+    }
+    println()
+    for(i in 5 downTo 1 step 2){
+        print("$i ")
+    }
+    println()
+}
+----------------------------------------------------
+fun main() {
+    val fruits =listOf("Apple","Banana","Cherry")
+    for(fruit in fruits.indices){
+        println("$fruit.${fruits[fruit]} ")
+    }
+}
+-------------------------------------------------
+fun main() {
+    var i=5
+    while(i>0){
+        println(i)
+        i--
+    }
+}
+-----------------------------------------------------
+fun main() {
+    var i=5
+    do{
+        println(i)
+        i--
+    }
+    while(i>5)   
+}
+----------------------------------------------------
+fun main() {
+    var i=1
+    do{
+        println(i)
+        i++
+    }
+    while(i<=5)   
+}
+-----------------------------------------------------
+fun demo(){
+    println("Hello World")
+}
+fun main() {
+    demo()
+    println("Kotlin")
+}
+----------------------------------------------------------------
+
 
 
 
