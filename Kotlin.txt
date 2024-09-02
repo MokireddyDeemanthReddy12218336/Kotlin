@@ -385,6 +385,87 @@ fun main(){
     s1.result()
 }
 ---------------------------------------------------------------------------------
+class Person{
+    var name:String
+    var age:Int
+    
+    constructor(x:String,y:Int){
+        this.name=x
+        this.age=y
+    }
+    
+    constructor(x:String){
+        this.name=x
+        this.age=0
+    }
+    
+    constructor(){
+        this.name="Rahul"
+        this.age=20
+    }
+    
+    fun intro(){
+        println("My name is $name and my age is $age")
+    }
+}
+
+fun main(){
+    var a=Person("Deemanth",20)
+    a.intro()
+    var b=Person()
+    b.intro()
+    var c=Person("Jashwanth")
+    c.intro()
+}
+----------------------------------------------------------------------------------------
+class Person(var name:String,var age:Int){ //Primary Constructor
+    
+    
+    constructor(x:String):this(){
+        this.name=x
+        this.age=0
+    }
+    
+    constructor():this("rahul",21)
+        
+    fun intro(){
+        println("My name is $name and my age is $age")
+    }
+}
+
+fun main(){
+    var a=Person("Deemanth",20)
+    a.intro()
+    var b=Person()
+    b.intro()
+    var c=Person("Jashwanth")
+    c.intro()
+}
+-----------------------------------------------------------------------------------------
+open class Rectangle(val a:Double,val b:Double){
+    fun area():Double{
+        return a*b
+    }
+    
+    open fun display(){
+        println("Area of rectangle with dimensions $a * $b is ${area()}")
+    }
+}
+
+class Square(side:Double):Rectangle(side,side){
+    override fun display(){
+        println("Area of the square with side $a is ${area()}")
+    }
+}
+
+fun main(){
+    val a=Rectangle(10.0,20.0)
+    a.display()
+    val b=Square(10.0)
+    b.display()
+}
+--------------------------------------------------------------------------------------------
+
 
 
 
